@@ -11,7 +11,7 @@ const Login = ({ handleLogin }) => {
   return (
     <div className="background">
       <div className="login-container">
-        <img src="/instagram_logo.png" alt="" />
+        <img src="/instaclone_logo.png" alt="" />
         <form onSubmit={(e) => handleLogin(e, formData)}>
           <input
             type="text"

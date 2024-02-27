@@ -38,7 +38,7 @@ export default function Home({ user, setUser }) {
         profileImage="https://images.pexels.com/photos/11585965/pexels-photo-11585965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         profileName="Bob"
       />
-      <div className="story-container">
+      <div className="story-content">
         {[...Array(8)].map((_, index) => (
           <Story
             key={index}

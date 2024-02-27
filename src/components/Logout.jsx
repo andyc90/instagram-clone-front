@@ -11,7 +11,7 @@ export default function Logout({ profileImage, user, setUser }) {
   return (
     <div className="logout-container">
       <div className="logout-content">
-        <img src={profileImage} alt="" />
+        <img src={profileImage} alt="Profile Image" />
         <div className="name-container">
           <span className="username">{user.username}</span>
           <span className="name">{user.email}</span>

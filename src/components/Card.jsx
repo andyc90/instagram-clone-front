@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Card.css";
-import { Heart, MessageCircle, Bookmark, MousePointer2 } from "lucide-react";
+import { Heart, MessageCircle, Bookmark, Send } from "lucide-react";
 
 export default function Card({ profileImage, profileName, Location, image }) {
   return (
@@ -19,7 +19,7 @@ export default function Card({ profileImage, profileName, Location, image }) {
         <div>
           <Heart />
           <MessageCircle className="message-icon" />
-          <MousePointer2 className="share-icon" />
+          <Send />
         </div>
         <Bookmark className="bookmark-icon" />
       </div>

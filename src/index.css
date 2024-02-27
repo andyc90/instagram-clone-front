@@ -9,7 +9,7 @@ input:focus {
 }
 
 .background {
-  background-image: url("/instagram_background.jpg");
+  background-image: url("/instaclone_background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;

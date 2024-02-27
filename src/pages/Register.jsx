@@ -12,7 +12,7 @@ const Register = ({ handleRegister }) => {
   return (
     <div className="background">
       <div className="register-container">
-        <img src="/instagram_logo.png" alt="" />
+        <img src="/instaclone_logo.png" alt="" />
         <form onSubmit={(e) => handleRegister(e, formData)}>
           <input
             type="text"

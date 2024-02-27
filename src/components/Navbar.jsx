@@ -7,14 +7,14 @@ import {
   Video,
   Heart,
   PlusSquare,
-  MousePointer2,
+  Send,
 } from "lucide-react";
 
-export default function Navbar({ profileImage, profileName }) {
+export default function Navbar({ profileImage }) {
   return (
     <div className="navbar">
       <div className="logo">
-        <img src="/instagram_logo.png" alt="Logo" />
+        <img src="/instaclone_logo.png" alt="Logo" />
       </div>
       <div className="nav-icons">
         <div className="nav-icon active">
@@ -34,7 +34,7 @@ export default function Navbar({ profileImage, profileName }) {
           <span>Reels</span>
         </div>
         <div className="nav-icon">
-          <MousePointer2 className="messages-icon" />
+          <Send />
           <span>Messages</span>
         </div>
         <div className="nav-icon">

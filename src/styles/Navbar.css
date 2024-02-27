@@ -82,7 +82,3 @@
 .nav-icon:hover img {
   transform: scale(1.1);
 }
-
-.messages-icon {
-  transform: scaleX(-1);
-}
