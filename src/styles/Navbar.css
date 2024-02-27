@@ -35,12 +35,12 @@
 .nav-icon {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; /* Adjusted margin to provide more spacing */
+  margin-bottom: 10px;
   cursor: pointer;
   transition: color 0.3s;
-  width: calc(100% - 20px); /* Adjusted width to consider padding */
+  width: calc(100% - 20px);
   border-radius: 8px;
-  padding: 10px; /* Adjusted padding */
+  padding: 10px;
 }
 
 .nav-icon:hover {
@@ -81,4 +81,8 @@
 
 .nav-icon:hover img {
   transform: scale(1.1);
+}
+
+.messages-icon {
+  transform: scaleX(-1);
 }

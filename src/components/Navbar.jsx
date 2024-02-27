@@ -5,9 +5,9 @@ import {
   Search,
   Compass,
   Video,
-  MessageSquare,
-  Bell,
-  Edit,
+  Heart,
+  PlusSquare,
+  MousePointer2,
 } from "lucide-react";
 
 export default function Navbar({ profileImage, profileName }) {
@@ -34,15 +34,15 @@ export default function Navbar({ profileImage, profileName }) {
           <span>Reels</span>
         </div>
         <div className="nav-icon">
-          <MessageSquare />
+          <MousePointer2 className="messages-icon" />
           <span>Messages</span>
         </div>
         <div className="nav-icon">
-          <Bell />
+          <Heart />
           <span>Notifications</span>
         </div>
         <div className="nav-icon">
-          <Edit />
+          <PlusSquare />
           <span>Create</span>
         </div>
       </div>
