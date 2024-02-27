@@ -1,0 +1,96 @@
+.card {
+  width: 400px;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.card-header img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.card-header div {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header span.profile-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.card-header span.location {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.image img {
+  min-height: 585px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.icon-container > div {
+  display: flex;
+}
+
+.icon-container svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.icon-container svg:last-child {
+  margin-right: 0;
+}
+
+.content span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.content p {
+  margin: 8px 0;
+}
+
+.card input[type="text"] {
+  width: 100%;
+  padding-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.content-profileName {
+  margin-right: 5px;
+}
+
+.message-icon {
+  transform: scaleX(-1);
+}
+
+.share-icon {
+  transform: scaleX(-1);
+}

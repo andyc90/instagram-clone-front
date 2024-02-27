@@ -10,7 +10,6 @@ import { useState } from "react";
 
 function App() {
   const [user, setUser] = useState();
-  const [allUsers, setAllUsers] = useState();
 
   const navigate = useNavigate();
 
@@ -73,7 +72,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Home user={user} />} />
+        <Route path="/" element={<Home user={user} setUser={setUser} />} />
         <Route
           path="/register"
           element={<Register handleRegister={handleRegister} />}
