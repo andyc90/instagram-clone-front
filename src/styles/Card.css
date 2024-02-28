@@ -60,6 +60,10 @@
   cursor: pointer;
 }
 
+.icon-container svg:hover {
+  color: grey;
+}
+
 .icon-container svg:last-child {
   margin-right: 0;
 }
@@ -71,6 +75,7 @@
 
 .content p {
   margin: 8px 0;
+  font-size: 14px;
 }
 
 .card input[type="text"] {
@@ -89,4 +94,36 @@
 
 .message-icon {
   transform: scaleX(-1);
+}
+
+.icon-container button {
+  border: none;
+  background: none;
+  padding-left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-container button.liked {
+  animation: enlargeAnimation 0.3s ease-in-out;
+  color: #ff2f40;
+}
+
+.icon-container button.liked svg {
+  fill: #ff2f40;
+}
+
+.icon-container button.liked svg:hover {
+  color: #ff2f40;
+}
+
+@keyframes enlargeAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

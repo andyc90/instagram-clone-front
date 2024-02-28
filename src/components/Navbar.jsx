@@ -45,10 +45,10 @@ export default function Navbar({ profileImage }) {
           <PlusSquare />
           <span>Create</span>
         </div>
-      </div>
-      <div className="nav-icon">
-        <img src={profileImage} alt="Profile Image" />
-        <span>Profile</span>
+        <div className="nav-icon">
+          <img src={profileImage} alt="Profile Image" />
+          <span>Profile</span>
+        </div>
       </div>
     </div>
   );
