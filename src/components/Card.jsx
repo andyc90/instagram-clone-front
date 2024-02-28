@@ -8,6 +8,7 @@ export default function Card({ profileImage, profileName, Location, image }) {
   const [likes, setLikes] = useState(0);
   const [commentCount, setCommentCount] = useState(0);
   const [randomComment, setRandomComment] = useState("");
+  const [newComment, setNewComment] = useState("");
 
   useEffect(() => {
     setLikes(Math.floor(Math.random() * 100));
@@ -22,6 +23,23 @@ export default function Card({ profileImage, profileName, Location, image }) {
       setLikes(likes + 1);
     }
     setIsLiked(!isLiked);
+  };
+
+  const handleCommentChange = (event) => {
+    setNewComment(event.target.value);
+  };
+
+  const handleCommentSubmit = () => {
+    if (newComment.trim() !== "") {
+      setCommentCount(commentCount + 1);
+      setNewComment("");
+    }
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      handleCommentSubmit();
+    }
   };
 
   return (
@@ -54,8 +72,14 @@ export default function Card({ profileImage, profileName, Location, image }) {
           <span className="content-profileName">{profileName}</span>
           {randomComment}
         </p>
-        <p>View all {commentCount} comments</p>
-        <input type="text" placeholder="Add a comment..." />
+        <a className="">View all {commentCount} comments</a>
+        <input
+          type="text"
+          placeholder="Add a comment..."
+          value={newComment}
+          onChange={handleCommentChange}
+          onKeyPress={handleKeyPress}
+        />
       </div>
     </div>
   );
