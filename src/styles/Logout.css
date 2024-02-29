@@ -26,9 +26,11 @@
   height: 48px;
   object-fit: cover;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .logout-container button {
+  font-size: 14px;
   background: none;
   border: none;
   outline: none;
@@ -37,4 +39,13 @@
   &:hover {
     color: #0084ff;
   }
+}
+
+.logout-container span {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.username {
+  font-weight: bold;
 }

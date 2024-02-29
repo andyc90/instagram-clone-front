@@ -11,6 +11,7 @@
 .login-container img {
   width: 175px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .login-input {

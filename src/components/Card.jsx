@@ -9,6 +9,7 @@ export default function Card({ profileImage, profileName, Location, image }) {
   const [commentCount, setCommentCount] = useState(0);
   const [randomComment, setRandomComment] = useState("");
   const [newComment, setNewComment] = useState("");
+  const [isBookmarked, setIsBookmarked] = useState(false);
 
   useEffect(() => {
     setLikes(Math.floor(Math.random() * 100));
@@ -42,6 +43,10 @@ export default function Card({ profileImage, profileName, Location, image }) {
     }
   };
 
+  const handleBookmarkClick = () => {
+    setIsBookmarked(!isBookmarked);
+  };
+
   return (
     <div className="card">
       <div className="card-header">
@@ -62,7 +67,10 @@ export default function Card({ profileImage, profileName, Location, image }) {
           <MessageCircle className="message-icon" />
           <Send />
         </div>
-        <Bookmark className="bookmark-icon" />
+        <Bookmark
+          className={`bookmark-icon ${isBookmarked ? "bookmarked" : ""}`}
+          onClick={handleBookmarkClick}
+        />
       </div>
       <div className="content">
         <span>
