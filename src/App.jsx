@@ -8,6 +8,9 @@ import Home from "./pages/Home";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
+const url = import.meta.env.PROD
+  ? "https://instagram-clone-back.onrender.com"
+  : "http://localhost:5001/";
 function App() {
   const [user, setUser] = useState();
 
@@ -18,7 +21,7 @@ function App() {
     console.log(formData);
 
     try {
-      const response = await fetch("http://localhost:5001/users/userLogin", {
+      const response = await fetch(`${url}/users/userLogin`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +51,7 @@ function App() {
     console.log(formData);
 
     try {
-      const response = await fetch("http://localhost:5001/users/registerUser", {
+      const response = await fetch(`${url}/users/registerUser`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
